@@ -31,6 +31,9 @@
         }
         section {
             padding: 2rem;
+            opacity: 0; /* Initially hidden */
+            transform: translateY(20px); /* Slide-up effect */
+            animation: fadeIn 1s forwards;
         }
         .pricing-table, .availability-table {
             width: 100%;
@@ -96,6 +99,35 @@
             color: #ff6600;
             font-size: 1.8rem;
         }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Specific Delays for Sections */
+        section.pricing-table {
+            animation-delay: 0.5s;
+        }
+        section.image-gallery {
+            animation-delay: 1s;
+        }
+        section.testimonials {
+            animation-delay: 1.5s;
+        }
+        section.services {
+            animation-delay: 2s;
+        }
+        section.faq {
+            animation-delay: 2.5s;
+        }
     </style>
 </head>
 <body>
@@ -105,7 +137,7 @@
     </header>
 
     <div class="content">
-        <section>
+        <section class="pricing-table">
             <h2>Our Dumpster Options & Pricing</h2>
             <table class="pricing-table">
                 <thead>
@@ -143,11 +175,11 @@
         </section>
 
         <!-- Image Gallery (Top-to-Bottom Image Layout) -->
-        <div class="image-gallery">
+        <section class="image-gallery">
             <img src="IMG_1980.jpg" alt="Trailer at Jobsite 1">
             <img src="IMG_4840.jpg" alt="Trailer at Jobsite 2">
             <img src="IMG_4825.jpg" alt="Trailer at Jobsite 3">
-        </div>
+        </section>
 
         <!-- Customer Testimonials Section -->
         <section class="testimonials">
