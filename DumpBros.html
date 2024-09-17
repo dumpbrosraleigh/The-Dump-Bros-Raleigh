@@ -12,7 +12,6 @@
             color: #333;
             margin: 0;
             padding: 0;
-            min-height: 300vh; /* Ensures the page is twice the height of the viewport */
         }
         header {
             background-color: #ff6600; /* Bright orange color */
@@ -78,15 +77,16 @@
             text-align: center;
             margin: 1rem 0;
         }
-        /* New Styles for Vertically Aligned Images */
+        /* Ensure each image is treated as a block element and takes up its own space */
         .image-gallery {
             margin: 2rem 0;
             text-align: center;
         }
         .image-gallery img {
-            max-width: 80%; /* Ensures images are not too wide */
+            display: block; /* Force images to appear in vertical order */
+            width: 80%; /* Ensures images are not too wide */
             height: auto;
-            margin-bottom: 20px;
+            margin: 20px auto; /* Space between images */
             border: 2px solid #ddd;
         }
     </style>
