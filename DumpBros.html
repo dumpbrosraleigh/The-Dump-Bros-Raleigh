@@ -77,17 +77,24 @@
             text-align: center;
             margin: 1rem 0;
         }
-        /* Ensure each image is treated as a block element and takes up its own space */
         .image-gallery {
             margin: 2rem 0;
             text-align: center;
         }
         .image-gallery img {
-            display: block; /* Force images to appear in vertical order */
-            width: 80%; /* Ensures images are not too wide */
+            display: block;
+            width: 80%;
             height: auto;
-            margin: 40px auto; /* Space between images */
+            margin: 20px auto;
             border: 2px solid #ddd;
+        }
+        .testimonials, .services, .faq {
+            margin: 2rem 0;
+            padding: 1rem;
+        }
+        .faq h3, .services h3, .testimonials h3 {
+            color: #ff6600;
+            font-size: 1.8rem;
         }
     </style>
 </head>
@@ -139,9 +146,33 @@
         <!-- Image Gallery (Top-to-Bottom Image Layout) -->
         <div class="image-gallery">
             <img src="IMG_1980.jpg" alt="Trailer at Jobsite 1">
-            <img src="IMG_4840.jpg" alt="Trailer at Jobsite 2">
-            <img src="IMG_4825.jpg" alt="Trailer at Jobsite 3">
+            <img src="IMG_2119.jpg" alt="Trailer at Jobsite 2">
+            <img src="IMG_2384.jpg" alt="Trailer at Jobsite 3">
         </div>
+
+        <!-- Customer Testimonials Section -->
+        <section class="testimonials">
+            <h3>Customer Testimonials</h3>
+            <img src="Dump Bros Image.PNG" alt="Yelp Review Snippet" style="width:80%; margin:auto; display:block;">
+        </section>
+
+        <!-- Services Offered Section -->
+        <section class="services">
+            <h3>Services Offered</h3>
+            <p>Placeholder: Describe the specific services Dump Bro's offers, including dumpster rental durations (7 days, 14 days, etc.), types of waste allowed (construction, household, yard waste), and delivery/pickup details. Include any pricing packages or options available.</p>
+        </section>
+
+        <!-- Frequently Asked Questions Section -->
+        <section class="faq">
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <ul>
+                <li>What kind of waste can I put in the dumpster?</li>
+                <li>How long can I rent the dumpster for?</li>
+                <li>Are there any materials that cannot be placed in the dumpster?</li>
+                <li>What areas do you service?</li>
+                <li>What’s the process for booking a dumpster?</li>
+            </ul>
+        </section>
     </div>
 
     <footer>
