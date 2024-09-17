@@ -19,20 +19,41 @@
             padding: 0;
         }
 
+        /* Header with Faded Background Image */
         header {
-            background-color: #ff6600; /* Bright orange color */
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
+            background: url('IMG_2384.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
             position: relative;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header-overlay {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            color: #fff; /* White text for readability */
+            padding: 2rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         header h1 {
-            margin: 0;
             font-size: 2.5rem;
+            margin: 0;
         }
 
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Main Content */
         .content {
             max-width: 1200px;
             margin: 0 auto;
@@ -178,9 +199,13 @@
     </style>
 </head>
 <body>
+
+    <!-- Header with Faded Background Image -->
     <header>
-        <h1>Welcome to Dump Bro's Dumpster Rentals</h1>
-        <p>Your trusted dumpster rental service in Raleigh, NC</p>
+        <div class="header-overlay">
+            <h1>Welcome to Dump Bro's Dumpster Rentals</h1>
+            <p>Your trusted dumpster rental service in Raleigh, NC</p>
+        </div>
     </header>
 
     <div class="content">
@@ -229,40 +254,51 @@
         </section>
 
         <!-- Customer Testimonials Section -->
-      <section class="testimonials">
-    <h3>What Our Customers Say</h3>
-    
-    <blockquote>
-        <p>"I needed to get a bunch of trees, yard waste, and debris hauled away from my backyard in a hurry before going on vacation. A friend recommended Eddie and his company, The Dump Bros, so I decided to give him a call. I asked if he could make it by 6 AM, and to my surprise, he showed up an hour early at 5 AM with his team! The customer service was some of the best I've ever experienced. Eddie was professional, efficient, and made what I thought would be a headache super simple. If you ever need a reliable team that offers fair pricing and delivers quality service, The Dump Bros are the way to go."</p>
-        <footer>- 5-star Yelp Review</footer>
-    </blockquote>
+        <section class="testimonials">
+            <h3>What Our Customers Say</h3>
+            
+            <blockquote>
+                <p>"I needed to get a bunch of trees, yard waste, and debris hauled away from my backyard in a hurry before going on vacation. A friend recommended Eddie and his company, The Dump Bros, so I decided to give him a call. I asked if he could make it by 6 AM, and to my surprise, he showed up an hour early at 5 AM with his team! The customer service was some of the best I've ever experienced. Eddie was professional, efficient, and made what I thought would be a headache super simple. If you ever need a reliable team that offers fair pricing and delivers quality service, The Dump Bros are the way to go."</p>
+                <footer>- 5-star Yelp Review</footer>
+            </blockquote>
 
-    <blockquote>
-        <p>"I recently had the pleasure of working with The Dump Bros for a dumpster rental, and I cannot say enough good things about this company! From start to finish, they made the entire process seamless and stress-free. Their customer service is top-notch--friendly, responsive, and incredibly helpful in answering all my questions. The team was punctual, and the dumpster arrived exactly when promised, which was a huge plus for me as I was on a tight schedule. The equipment was clean and well-maintained, which made the whole experience that much better. Their pricing is competitive and transparent--no hidden fees, which I really appreciated. They even went the extra mile to ensure the pick-up process was quick and convenient, leaving my space spotless. If you're looking for a reliable, hassle-free dumpster rental service, I highly recommend The Dump Bros. They exceeded all my expectations, and I'll definitely be using them again for future projects!"</p>
-        <footer>- 5-star Yelp Review</footer>
-    </blockquote>
-</section>
-
+            <blockquote>
+                <p>"I recently had the pleasure of working with The Dump Bros for a dumpster rental, and I cannot say enough good things about this company! From start to finish, they made the entire process seamless and stress-free. Their customer service is top-notch--friendly, responsive, and incredibly helpful in answering all my questions. The team was punctual, and the dumpster arrived exactly when promised, which was a huge plus for me as I was on a tight schedule. The equipment was clean and well-maintained, which made the whole experience that much better. Their pricing is competitive and transparent--no hidden fees, which I really appreciated. They even went the extra mile to ensure the pick-up process was quick and convenient, leaving my space spotless. If you're looking for a reliable, hassle-free dumpster rental service, I highly recommend The Dump Bros. They exceeded all my expectations, and I'll definitely be using them again for future projects!"</p>
+                <footer>- 5-star Yelp Review</footer>
+            </blockquote>
+        </section>
 
         <!-- Services Offered Section -->
-       <section class="services">
-    <h3>Services Offered</h3>
-    <p>At Dump Bro's, we provide reliable and hassle-free dumpster rental services for all your waste disposal needs. Whether you're working on a construction project, cleaning up household clutter, or managing yard waste, we’ve got you covered.</p>
+        <section class="services">
+            <h3>Services Offered</h3>
+            <p>At Dump Bro's, we provide reliable and hassle-free dumpster rental services for all your waste disposal needs. Whether you're working on a construction project, cleaning up household clutter, or managing yard waste, we’ve got you covered.</p>
 
-    <ul>
-        <li><strong>Dumpster Rental by the Day:</strong> Rent our dumpsters on a daily basis, giving you the flexibility to keep the dumpster for as long as you need.</li>
-        <li><strong>Acceptable Waste:</strong> We accept all construction, household, and yard waste. From renovation debris to furniture, appliances, and yard trimmings, we handle it all.</li>
-        <li><strong>Delivery & Pickup:</strong> We deliver the dumpster to your location, and once you're done, we handle the pickup and disposal.</li>
-        <li><strong>Easy Payment:</strong> You only pay the rental fee and the dump fee to cover the cost of disposing of the waste.</li>
-    </ul>
+            <ul>
+                <li><strong>Dumpster Rental by the Day:</strong> Rent our dumpsters on a daily basis, giving you the flexibility to keep the dumpster for as long as you need.</li>
+                <li><strong>Acceptable Waste:</strong> We accept all construction, household, and yard waste. From renovation debris to furniture, appliances, and yard trimmings, we handle it all.</li>
+                <li><strong>Delivery & Pickup:</strong> We deliver the dumpster to your location, and once you're done, we handle the pickup and disposal.</li>
+                <li><strong>Easy Payment:</strong> You only pay the rental fee and the dump fee to cover the cost of disposing of the waste.</li>
+            </ul>
 
-    <p>Let us help you make waste disposal simple and efficient. Contact us today to book your dumpster rental!</p>
-</section>
+            <p>Let us help you make waste disposal simple and efficient. Contact us today to book your dumpster rental!</p>
+        </section>
 
+        <!-- Frequently Asked Questions Section -->
+        <section class="faq">
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <ul>
+                <li>What kind of waste can I put in the dumpster?</li>
+                <li>How long can I rent the dumpster for?</li>
+                <li>Are there any materials that cannot be placed in the dumpster?</li>
+                <li>What areas do you service?</li>
+                <li>What’s the process for booking a dumpster?</li>
+            </ul>
+        </section>
     </div>
 
     <footer>
         <p>&copy; 2024 Dump Bro's. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
