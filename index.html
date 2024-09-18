@@ -1,1 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dumpster rental services for Raleigh, NC - Dump Bro's">
+    <title>Dump Bro's Dumpster Rentals</title>
 
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #333, #222); /* Dark gray to darker gray background */
+            color: #fff; /* Change text color to light for better contrast */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header with Red Gradient Background */
+        header {
+            background: linear-gradient(135deg, #ff0000, #8b0000); /* Bright red to darker red */
+            color: #fff; /* White text */
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        section {
+            padding: 2rem;
+            background: #333; /* Dark gray background for sections */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for sections */
+            margin-bottom: 20px;
+        }
+
+        .pricing-table, .availability-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .pricing-table th, .availability-table th, .pricing-table td, .availability-table td {
+            padding: 1rem;
+            border: 1px solid #444; /* Darker border */
+            text-align: left;
+        }
+
+        .pricing-table th, .availability-table th {
+            background-color: #8b0000; /* Darker red background for table headers */
+            color: #fff; /* White text */
+        }
+
+        footer {
+            background-color: #8b0000; /* Dark red footer */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); /* Footer shadow for depth */
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+        }
+
+        /* Phone Number Styles */
+        .contact-info p.phone-number {
+            font-size: 2rem; /* Increase the font size */
+            font-weight: bold; /* Make it bold */
+            text-align: center; /* Center the phone number */
+            margin-top: 10px;
+            color: #ff0000; /* Bright red to draw attention */
+        }
+
+        /* Social Media Links */
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #ff0000; /* Bright red to match the theme */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .social-links a:hover {
+            color: #ff6600; /* Lighter red on hover */
+        }
+
+        /* Book Now Button Styles */
+        .btn-book {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease; /* Transition for hover effect */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        }
+
+        /* Hover Effect for Book Now Button */
+        .btn-book:hover {
+            background-color: #0056b3; /* Darker shade of blue */
+            transform: scale(1.05); /* Slightly increase size */
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        /* Call Today Box */
+        .call-today {
+            font-size: 2rem;
+            color: #ff0000; /* Bright red */
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .image-gallery img {
+            display: block;
+            width: 80%;
+            height: auto;
+            margin: 20px auto;
+            border: 2px solid #444; /* Dark gray border */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for images */
+        }
+
+        /* Testimonials, Services, FAQ Sections */
+        .testimonials, .services, .faq {
+            margin: 2rem 0;
+            padding: 1rem;
+        }
+
+        .faq h3, .services h3, .testimonials h3 {
+            color: #ff0000; /* Bright red for headings */
+            font-size: 1.8rem;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply Animation Delays to Sections */
+        section.pricing-table {
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.5s;
+        }
+
+        section.image-gallery {
+            animation: fadeIn 1s forwards;
+            animation-delay: 1s;
+        }
+
+        section.testimonials {
+            animation: fadeIn 1s forwards;
+            animation-delay: 1.5s;
+        }
+
+        section.services {
+            animation: fadeIn 1s forwards;
+            animation-delay: 2s;
+        }
+
+        section.faq {
+            animation: fadeIn 1s forwards;
+            animation-delay: 2.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Red Gradient Background -->
+    <header>
+        <h1>Welcome to Dump Bro's Dumpster Rentals</h1>
+        <p>Your trusted dumpster rental service in Raleigh, NC</p>
+    </header>
+
+    <div class="content">
+        <section class="pricing-table">
+            <h2>Our Dumpster Options & Pricing</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Dumpster Size</th>
+                        <th>Rental Price</th>
+                        <th>Book Now</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15-Yard Dumpster (5 Available)</td>
+                        <td>Call for Pricing</td>
+                        <td><a href="https://calendly.com/thedumpbros2022" class="btn-book" target="_blank">Book Now</a></td>
+                    </tr>
+                    <tr>
+                        <td>20-Yard Dumpster (1 Available)</td>
+                        <td>Call for Pricing</td>
+                        <td><a href="https://calendly.com/thedumpbros2022" class="btn-book" target="_blank">Book Now</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Call Today Box -->
+        <div class="call-today">
+            <p>Call Today!</p>
+        </div>
+
+        <!-- Contact the CEO Section -->
+        <section class="contact-info">
+            <h2>Contact The Company</h2>
+            <p>Email: thedumpbros2022@outlook.com</p>
+            <p class="phone-number">Phone: (919) 412-1766</p> <!-- Highlighted and centered phone number -->
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <h3>Connect With Us:</h3>
+                <a href="https://m.facebook.com/100084863863752" target="_blank">Facebook</a> |
+                <a href="https://m.yelp.com/biz/the-dump-bros-raleigh-2" target="_blank">Yelp</a> |
+                <a href="https://nextdoor.com/pages/the-dump-bros-raleigh-nc/" target="_blank">Nextdoor</a>
+            </div>
+        </section>
+
+        <!-- Image Gallery (Top-to-Bottom Image Layout) -->
+        <section class="image-gallery">
+            <img src="IMG_1980.jpg" alt="Trailer at Jobsite 1">
+            <img src="IMG_4840.jpg" alt="Trailer at Jobsite 2">
+            <img src="IMG_4825.jpg" alt="Trailer at Jobsite 3">
+        </section>
+
+        <!-- Customer Testimonials Section -->
+        <section class="testimonials">
+            <h3>What Our Customers Say</h3>
+            
+            <blockquote>
+                <p>"I needed to get a bunch of trees, yard waste, and debris hauled away from my backyard in a hurry before going on vacation. A friend recommended Eddie and his company, The Dump Bros, so I decided to give him a call. I asked if he could make it by 6 AM, and to my surprise, he showed up an hour early at 5 AM with his team! The customer service was some of the best I've ever experienced. Eddie was professional, efficient, and made what I thought would be a headache super simple. If you ever need a reliable team that offers fair pricing and delivers quality service, The Dump Bros are the way to go."</p>
+                <footer>- 5-star Yelp Review</footer>
+            </blockquote>
+
+            <blockquote>
+                <p>"I recently had the pleasure of working with The Dump Bros for a dumpster rental, and I cannot say enough good things about this company! From start to finish, they made the entire process seamless and stress-free. Their customer service is top-notch--friendly, responsive, and incredibly helpful in answering all my questions. The team was punctual, and the dumpster arrived exactly when promised, which was a huge plus for me as I was on a tight schedule. The equipment was clean and well-maintained, which made the whole experience that much better. Their pricing is competitive and transparent--no hidden fees, which I really appreciated. They even went the extra mile to ensure the pick-up process was quick and convenient, leaving my space spotless. If you're looking for a reliable, hassle-free dumpster rental service, I highly recommend The Dump Bros. They exceeded all my expectations, and I'll definitely be using them again for future projects!"</p>
+                <footer>- 5-star Yelp Review</footer>
+            </blockquote>
+        </section>
+
+        <!-- Services Offered Section -->
+        <section class="services">
+            <h3>Services Offered</h3>
+            <p>At Dump Bro's, we provide reliable and hassle-free dumpster rental services for all your waste disposal needs. Whether you're working on a construction project, cleaning up household clutter, or managing yard waste, we’ve got you covered.</p>
+
+            <ul>
+                <li><strong>Dumpster Rental by the Day:</strong> Rent our dumpsters on a daily basis, giving you the flexibility to keep the dumpster for as long as you need.</li>
+                <li><strong>Acceptable Waste:</strong> We accept all construction, household, and yard waste. From renovation debris to furniture, appliances, and yard trimmings, we handle it all.</li>
+                <li><strong>Delivery & Pickup:</strong> We deliver the dumpster to your location, and once you're done, we handle the pickup and disposal.</li>
+                <li><strong>Easy Payment:</strong> You only pay the rental fee and the dump fee to cover the cost of disposing of the waste.</li>
+            </ul>
+
+            <p>Let us help you make waste disposal simple and efficient. Contact us today to book your dumpster rental!</p>
+        </section>
+
+        <!-- Frequently Asked Questions Section -->
+        <section class="faq">
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <ul>
+                <li>What kind of waste can I put in the dumpster?</li>
+                <li>How long can I rent the dumpster for?</li>
+                <li>Are there any materials that cannot be placed in the dumpster?</li>
+                <li>What areas do you service?</li>
+                <li>What’s the process for booking a dumpster?</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dump Bro's. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
