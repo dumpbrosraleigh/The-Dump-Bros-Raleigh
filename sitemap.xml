@@ -7,3 +7,28 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Services Offered Page -->
+  <url>
+    <loc>https://thedumpbrosraleigh.com/services</loc>
+    <lastmod>2024-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FAQ Section -->
+  <url>
+    <loc>https://thedumpbrosraleigh.com/faq</loc>
+    <lastmod>2024-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact Information -->
+  <url>
+    <loc>https://thedumpbrosraleigh.com/contact</loc>
+    <lastmod>2024-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
