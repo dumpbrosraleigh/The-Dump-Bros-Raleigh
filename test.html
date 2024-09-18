@@ -14,32 +14,37 @@
         body {
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(to bottom, #333, #222); /* Dark gray to darker gray background */
-            color: #fff; /* Change text color to light for better contrast */
+            color: #fff;
             margin: 0;
             padding: 0;
         }
 
-        /* Header with Red Gradient Background */
+        /* Header with Faded Background Image and Text Shadow */
         header {
-            background: linear-gradient(135deg, #ff0000, #8b0000); /* Bright red to darker red */
-            color: #fff; /* White text */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Faded overlay */
+                        url('IMG_2384.jpg') no-repeat center center; /* Background image */
+            background-size: cover; /* Cover the entire header */
+            color: #fff;
             height: 250px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow around header */
         }
 
         header h1 {
             font-size: 3rem;
             font-weight: 700;
             margin: 0;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Text shadow to stand out */
         }
 
         header p {
             font-size: 1.2rem;
             margin-top: 10px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Text shadow for subtitle */
         }
 
         /* Main Content */
@@ -51,7 +56,7 @@
 
         section {
             padding: 2rem;
-            background: #333; /* Dark gray background for sections */
+            background: #333;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for sections */
             margin-bottom: 20px;
         }
@@ -63,22 +68,22 @@
 
         .pricing-table th, .availability-table th, .pricing-table td, .availability-table td {
             padding: 1rem;
-            border: 1px solid #444; /* Darker border */
+            border: 1px solid #444;
             text-align: left;
         }
 
         .pricing-table th, .availability-table th {
-            background-color: #8b0000; /* Darker red background for table headers */
-            color: #fff; /* White text */
+            background-color: #8b0000;
+            color: #fff;
         }
 
         footer {
-            background-color: #8b0000; /* Dark red footer */
+            background-color: #8b0000;
             color: #fff;
             text-align: center;
             padding: 1rem 0;
             margin-top: 2rem;
-            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); /* Footer shadow for depth */
+            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .contact-info {
@@ -96,11 +101,11 @@
 
         /* Phone Number Styles */
         .contact-info p.phone-number {
-            font-size: 2rem; /* Increase the font size */
-            font-weight: bold; /* Make it bold */
-            text-align: center; /* Center the phone number */
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
             margin-top: 10px;
-            color: #ff0000; /* Bright red to draw attention */
+            color: #ff0000;
         }
 
         /* Social Media Links */
@@ -110,14 +115,14 @@
         }
 
         .social-links a {
-            color: #ff0000; /* Bright red to match the theme */
+            color: #ff0000;
             text-decoration: none;
             font-weight: bold;
             margin: 0 10px;
         }
 
         .social-links a:hover {
-            color: #ff6600; /* Lighter red on hover */
+            color: #ff6600;
         }
 
         /* Book Now Button Styles */
@@ -129,21 +134,21 @@
             text-decoration: none;
             margin-top: 1rem;
             border-radius: 5px;
-            transition: all 0.3s ease; /* Transition for hover effect */
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         /* Hover Effect for Book Now Button */
         .btn-book:hover {
-            background-color: #0056b3; /* Darker shade of blue */
-            transform: scale(1.05); /* Slightly increase size */
-            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+            background-color: #0056b3;
+            transform: scale(1.05);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
         }
 
         /* Call Today Box */
         .call-today {
             font-size: 2rem;
-            color: #ff0000; /* Bright red */
+            color: #ff0000;
             text-align: center;
             margin: 1rem 0;
         }
@@ -157,15 +162,15 @@
         .image-row {
             display: flex;
             justify-content: center;
-            gap: 20px; /* Add space between the images */
+            gap: 20px;
             margin-bottom: 20px;
         }
 
         .image-gallery img {
-            width: 45%; /* Two images per row, each taking 45% of the space */
+            width: 45%;
             height: auto;
-            border: 2px solid #444; /* Dark gray border */
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for images */
+            border: 2px solid #444;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         /* Testimonials, Services, FAQ Sections */
@@ -175,7 +180,7 @@
         }
 
         .faq h3, .services h3, .testimonials h3 {
-            color: #ff0000; /* Bright red for headings */
+            color: #ff0000;
             font-size: 1.8rem;
         }
 
@@ -220,7 +225,7 @@
 </head>
 <body>
 
-    <!-- Header with Red Gradient Background -->
+    <!-- Header with Faded Background Image and Text Shadow -->
     <header>
         <h1>Welcome to Dump Bro's Dumpster Rentals</h1>
         <p>Your trusted dumpster rental service in Raleigh, NC</p>
