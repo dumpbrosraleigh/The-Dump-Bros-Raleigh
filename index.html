@@ -8,12 +8,7 @@
 
     <!-- Google Font: Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Meta Title -->
-    <title>Dump Bros Dumpster Rentals - Raleigh, NC</title>
 
-    <!-- Meta Description -->
-    <meta name="description" content="Dump Bros provides reliable dumpster rentals in Raleigh, NC. We handle construction, household, and yard waste. Call today for pricing and availability!">
-    
     <style>
         /* Global Styles */
         body {
@@ -159,11 +154,16 @@
             text-align: center;
         }
 
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Add space between the images */
+            margin-bottom: 20px;
+        }
+
         .image-gallery img {
-            display: block;
-            width: 80%;
+            width: 45%; /* Two images per row, each taking 45% of the space */
             height: auto;
-            margin: 20px auto;
             border: 2px solid #444; /* Dark gray border */
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for images */
         }
@@ -272,11 +272,20 @@
             </div>
         </section>
 
-        <!-- Image Gallery (Top-to-Bottom Image Layout) -->
+        <!-- Image Gallery (Two Columns of 3 Images Each) -->
         <section class="image-gallery">
-            <img src="IMG_1980.jpg" alt="Trailer at Jobsite 1">
-            <img src="IMG_4840.jpg" alt="Trailer at Jobsite 2">
-            <img src="IMG_4825.jpg" alt="Trailer at Jobsite 3">
+            <div class="image-row">
+                <img src="IMG_1980.jpg" alt="Trailer at Jobsite 1">
+                <img src="IMG_2416.jpg" alt="Trailer at Jobsite 2">
+            </div>
+            <div class="image-row">
+                <img src="IMG_2123.jpg" alt="Trailer at Jobsite 3">
+                <img src="IMG_2529.jpg" alt="Trailer at Jobsite 4">
+            </div>
+            <div class="image-row">
+                <img src="IMG_4825.jpg" alt="Trailer at Jobsite 5">
+                <img src="IMG_4840.jpg" alt="Trailer at Jobsite 6">
+            </div>
         </section>
 
         <!-- Customer Testimonials Section -->
